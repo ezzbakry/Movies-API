@@ -10,6 +10,7 @@ import Login from './pages/Form/Login'
 import Movies from './pages/Movies/Movies'
 import Moviedetails from './pages/Movies/Moviedetails'
 import Notfound from './pages/Notfound/Notfound'
+import LoginLib from './pages/Form/LoginLib'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,7 @@ function App() {
         <Header></Header>
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
-          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/login' element={<LoginLib></LoginLib>}></Route>
           <Route path='/movies' element={<Movies></Movies>}></Route>
           <Route path='/moviedetails/:id' element={<Moviedetails></Moviedetails>}></Route>
           <Route path='*' element={<Notfound></Notfound>}></Route>
